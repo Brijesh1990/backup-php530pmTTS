@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+body
+{
+    background-color: yellowgreen;
+}
+h1 
+{
+    text-align: center;
+    color: red;
+    font-size: 85px;
+}
+p 
+{
+    width: 50%;
+    height: auto;
+    color: white;
+    margin: auto;
+=======
+body
+{
+    background-color: yellowgreen;
+}
+h1 
+{
+    text-align: center;
+    color: red;
+    font-size: 85px;
+}
+p 
+{
+    width: 50%;
+    height: auto;
+    color: white;
+    margin: auto;
+>>>>>>> 994974f4c4bea488145d9f9c00ef8928d2b7b86a
+}

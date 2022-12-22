@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Online flipkart shopping</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <!-- slider here -->
+    <script>
+        $(document).ready(function(){
+
+            $("#slide").cycle("fade");
+        })
+        
+    </script>
+    <style type="text/css">
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: #aab6bf;
+            overflow-x: hidden;
+        }
+        .header,
+        .top-header
+        {
+            width: 100%;
+            height: auto;
+            background-color: #196fb5;
+            padding: 25px;
+            /* position: sticky;
+            top: 0; */
+            position: fixed;
+            z-index: 10;
+            top: 0;
+        }
+        .call-us
+        {
+            width: 20%;
+            height: auto;
+            float: left;
+        }
+        .search input
+        {
+            width: 40%;
+            height: auto;
+            padding: 8px;
+            float: left;
+        }
+        .like-us
+        {
+          width: 30%;
+          height: auto;
+          float: left;
+          letter-spacing: 1px;
+          font-size: 17px;
+          margin-left: 8%;
+        }
+        #btn 
+        {
+            width: 80px;
+            height: auto;
+            padding: 8px;
+        }
+        .nav 
+        {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            margin-top: 6%;
+           
+        }
+        .nav ul li 
+        {
+            display: inline-block;
+            padding: 38px 30px;
+        }
+        .nav a 
+        {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .slider 
+        {
+            width: 96%;
+            height: 350px;
+            background-color: yellowgreen;
+            margin-top: 1%;
+            margin-left: 2%;
+
+        }
+        .slider img  
+        {
+            width: 100%;
+            height: 350px;
+        }
+        .content 
+        {
+            width: 98%;
+            height: auto;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+        .products-items-adv
+        {
+            width: 77%;
+            height: 350px;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+            float: left;
+        }
+        .items-adv 
+        {
+            width: 20%;
+            height: 350px;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+            float: right;
+        }
+        .items-adv img
+        {
+            width: 100%;
+            height: 350px;
+            border: solid 4px white;
+           
+        }
+        .products-items 
+        {
+            width: 100%;
+            height: 350px;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+        }
+        .products-items1 
+        {
+            width: 30%;
+            height: 350px;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+            margin-left: 3%;
+            float: left;
+        }
+        .products-items2 
+        {
+            width: 30%;
+            height: 350px;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+            margin-left: 3%;
+            float: left;
+        }
+        .products-items3 
+        {
+            width: 30%;
+            height: 350px;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+            margin-left: 3%;
+            float: left;
+        }
+        .clearfix
+        {
+            clear: both;
+        }
+        .our-story
+        {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            border-radius: 3px;
+            margin-top: 2%;
+        }
+        .our-story h3 
+        {
+            color: gray;
+            padding: 15px;
+        }
+        .our-story p 
+        {
+           
+            padding: 15px;
+            text-align: justify;
+        }
+        .fixed-adv
+        {
+            width: 6%;
+            height: 400px;
+            /* background-color: rgba(15,0,0,1); */
+            background-color: gray;
+            position: absolute;
+            position: fixed;
+            margin-left: 93%;
+            margin-top: -26%;
+            z-index: 10;
+        }
+        .fixed-adv h1 
+        {
+            text-align: center;
+            writing-mode: sideways-lr !important;
+            margin-top: 48% !important;
+            animation: flash infinite 2s;
+        }
+
+        .footer 
+        {
+            width: 100%;
+            height: 350px;
+            background-color: #031e33;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <!-- header start here -->
+    <div class="header top-header">
+        <div class="call-us"><b><span class="fa fa-phone"></span> Call Us-(+91)-9173-357217</b></div>
+        <div class="search">
+            <form method="post">
+                <input type="text" name="search" placeholder="Search here products...">
+            </form>
+        </div>
+        <div class="like-us">
+            <button type="button" id="btn">Login</button>
+            <span class="fa fa-cart-plus"></span>Cart(0)
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-linkedin"></span>
+        </div>
+    </div>
+     <!-- navbar start here -->
+     <div class="nav navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Electronics</a></li>
+            <li><a href="">Furniture</a></li>
+            <li><a href="">Kids Items</a></li>
+            <li><a href="">Home decorations</a></li>
+            <li><a href="">Mens Items</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Contact us</a></li>
+            
+        </ul>
+     </div>
+     
+      <!-- slider start here -->
+    <div class="slider banner" id="slide">
+        <img src="images/banner.jpg">
+        <img src="images/banner1.jpg">
+        <img src="images/banner3.jpg">
+    </div>
+     <!-- content start here -->
+     <div class="content">
+         <!-- advertisement content -->
+         <div class="fixed-adv"><h1>Click for more offer</h1></div>  
+        <div class="products-items-adv"></div>
+        <div class="items-adv">
+            <img src="images/adv.webp">
+        </div>
+        <div class="clearfix"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+        <div class="products-items"></div>
+
+        <div class="products-items1"></div>
+        <div class="products-items2"></div>
+        <div class="products-items3"></div>
+
+        <div class="clearfix"></div>
+
+        <!-- our story -->
+        <div class="our-story">
+           <h3> Flipkart:</h3>
+           <p>The One-stop Shopping Destination
+E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.</p>
+<p>
+What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</p>
+
+<h3>Flipkart Plus</h3>
+<p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!</p>
+
+<p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+An annual Zomato Gold membership
+An annual Hotstar Premium membership
+6 months Gaana plus subscription
+Rupees 550 instant discount on flights on ixigo
+Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p>
+
+<h3>Flipkart No cost EMI</h3>
+<p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+
+<p>EMI on Debit Cards
+Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+
+<p>Mobile Exchange Offers
+Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+
+<p>What Can You Buy From Flipkart?
+Mobile Phones
+From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.</p>
+
+        </div>
+     </div>
+      <!-- footer start here -->
+    <div class="footer"></div>
+
+</body>
+</html>

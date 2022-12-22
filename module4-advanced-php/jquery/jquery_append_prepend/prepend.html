@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+    <script>
+    $(document).ready(function(){
+
+       $("button").addClass("btn-block");  
+       $("#btn").click(function(){
+        $("b").prepend("<b>pandey ravindranath &nbsp</b>")
+
+       });
+    });
+    
+    </script>
+
+    <style>
+        .btn-block 
+        {
+            width: 350px;
+            height: auto;
+            padding: 15px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+    <b>Brijesh</b>
+    <br><br>
+    <button type="button" id="btn">append</button>
+    </center>
+</body>
+</html>

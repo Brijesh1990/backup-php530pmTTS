@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        th 
+        {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#del").click(function()
+           {
+            $("#crt").remove();
+        });
+
+        // jquery effects
+        $("#btn1").click(function(){
+            $("#crt").hide(3000);
+        });
+
+        $("#btn2").click(function(){
+            $("#crt").show(3000);
+        });
+
+        $("#btn3").click(function(){
+            $("#crt").toggle(3000);
+        });
+
+        // fade effects 
+
+        $("#btn-pop").click(function(){
+            $("#crt1").slideToggle(2000);
+        })
+
+        })
+    </script>
+    <script>
+        function crt()
+        {
+            var p=document.getElementById("price").value;
+            var q=document.getElementById("qty").value;
+            var t=p*q;
+            document.getElementById("tot").innerHTML=t;
+
+        }
+    </script>
+
+    <style>
+        #crt1 
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            margin-top: 0%;
+            background-color: cadetblue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        
+    <button type="button" id="btn-pop">Click to Popup cart</button>
+        
+    <button type="button" id="btn1">Hide Cart</button>
+    <button type="button" id="btn2">Show Cart</button>
+    <button type="button" id="btn3">Toggle Cart</button>
+
+    <table align="center" border="0" cellpadding="5" cellspacing="5" id="crt">
+        <tr>
+            <th>Id</th>
+            <th>photo</th>
+            <th>Pname</th>
+            <th>qty</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td><img src="https://rukminim1.flixcart.com/image/416/416/kn6cxow0/mobile/p/p/r/guru-1200-gt-e1200zkyins-samsung-original-imagfwzx5z9ry8eh.jpeg?q=70" width="55px" height="45px"></td>
+            <td>samsung galaxy</td>
+            <td><input type="number" id="qty" min="1" max="10" value="1" onchange="crt()"></td>
+            <td>Rs.<input type="text" id="price"  value="2500" readonly style="border: none;"></td>
+            <td><a href="#" id="del">delete</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="6"><h3 align="right">Subtotal is Rs.<label id="tot">2500</label></h3></td>
+        </tr>
+    </table>
+
+
+    <table align="center" border="0" cellpadding="5" cellspacing="5" id="crt1">
+        <tr>
+            <th>Email </th>
+            <th><input type="text"></th>
+            </tr>
+            <tr>
+                <th>Password </th>
+                <th><input type="text"></th>
+            </tr>
+           
+        </table>
+</body>
+</html>
